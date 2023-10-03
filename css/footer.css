@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer {
+    width: 100vw;
+    background-color: #fff;
+}
+
+.colones-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.separation {
+    width: 2px;
+    height: 80vh;
+    background-color: #111;
+}
+
+.right {
+    width: 50vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right p {
+    color: #111;
+    font-size: 1.25rem;
+}
+
+.links-container {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.links-container a {
+    background-color: transparent;
+    border: none;
+}
+
+.links-container a img {
+    width: 60px;
+    height: 60px;
+}
+
+.btnContact-container {
+    margin-top: 5%;
+}
+
+.btnContact-container button {
+    font-size: 1.5em;
+    font-family: 'Source Code Pro', monospace;
+    padding: 20px;
+    background-color: #111;
+    color: #f1f1f1;
+    border-radius: 30px;
+    border-style: none;
+    font-weight: bold;
+}
+
+.btnContact-container button:hover {
+    background-color: transparent;
+    border: solid 3px;
+    border-color: #111;
+    color: #111;
+}
+
+.btnContact-container button a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+.btnContact-container button a:hover {
+    color: #111;
+}
+
+@media screen and (max-width:1023px) {
+    .colones-container {
+        flex-direction: column;
+    }
+    .left {
+        width: 100vw;
+    }
+    .right {
+        width: 100vw;
+        margin-top: 4%;
+    }
+    .separation {
+        width: 80vw;
+        height: 3px;
+    }
+}
